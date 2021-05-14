@@ -1,0 +1,111 @@
+body,
+html {
+    overflow-x: hidden;
+    background: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --background: #1A182D;
+    --main: #141324;
+    --grey: rgb(209, 209, 209);
+    --white: #fff;
+    --white-grey: rgb(172, 172, 172);
+
+    --button: #9c6cc9;
+    --button-hover: #5d4079;
+}
+
+.login_card {
+    width: 400px;
+    height: 500px;
+    background: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login_card img {
+    width: 170px;
+    margin-top: 40px;
+}
+
+.login_card h2 {
+    font-weight: 800;
+    color: var(--grey);
+}
+
+.form_login {
+    width: 100%;   
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_login label {
+    font-size: 11pt;
+    color: var(--grey);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_login input {
+    width: 100%;
+    background: var(--background);
+    padding: 9px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: var(--white-grey);
+}
+
+.form_login input:focus {
+    outline: 2px solid #2a2747;
+}
+
+.form_login input::placeholder {
+    color: var(--white-grey);
+    font-weight: bold;
+}
+
+.form_login button {
+    width: 100%;
+    padding: 10px;
+    background: var(--button);
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.form_login button:hover {
+    transform: scale(1.01);
+    background: var(--button-hover);
+}
+
+@keyframes from-left {
+    0%{
+        margin-left: -3000px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
